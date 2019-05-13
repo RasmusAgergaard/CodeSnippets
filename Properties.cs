@@ -41,6 +41,40 @@ namespace Properties
         public string Name => $"{_firstName} {_lastName}";
     }
 
+    public class SaleItem
+    {
+        //Expression body definitions for both accessors
+        //Note that the return keyword is not used with the get accessor
+
+        private string _name;
+        private decimal _cost;
+
+        public SaleItem(string name, decimal cost)
+        {
+            _name = name;
+            _cost = cost;
+        }
+
+        public string Name
+        {
+            get => _name;
+            set => _name = value;
+        }
+
+        public decimal Price
+        {
+            get => _cost;
+            set => _cost = value;
+        }
+    }
+
+    public class SaleItem2
+    {
+        //Auto-implemented properties
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -51,6 +85,13 @@ namespace Properties
 
             var person = new Person("Bill", "Gates");
             Console.WriteLine(person.Name);
+
+            var item = new SaleItem("Shoes", 19.95m);
+            Console.WriteLine($"{item.Name}: sells for {item.Price}");
+
+            //Object is initialized with a object initializer
+            var item2 = new SaleItem2 { Name = "Plant", Price = 9.99m };
+            Console.WriteLine($"{item2.Name}: sells for {item2.Price}");
         }
     }
 }
