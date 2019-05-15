@@ -2,6 +2,7 @@
 
 namespace DisposeAndFinalize
 {
+    //Class that implements the IDisposable interface
     public class MyClass : IDisposable
     {
         //Constructor
@@ -20,14 +21,15 @@ namespace DisposeAndFinalize
         {
             //write code to release unmanaged resources
         }
-
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Example: Bitmap loaded into memory, and removed again with Dispose()
+            var bitmap = new Bitmap(@"C:\Code\king.png");
+            bitmap.Dispose();
         }
     }
 }
