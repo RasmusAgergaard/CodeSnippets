@@ -1,0 +1,186 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "projectName": "OdeToFood.Core",
+        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+        "projectName": "OdeToFood.Data",
+        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+        "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+                "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\OdeToFood.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+        "projectName": "OdeToFood",
+        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+        "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
+                "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
