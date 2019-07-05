@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {}
+    "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+    "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
         "projectName": "OdeToFood.Core",
-        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
+        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj",
         "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\obj\\",
+        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
+    "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
         "projectName": "OdeToFood.Data",
-        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
         "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\obj\\",
+        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -82,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
-                "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
+              "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+                "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
               }
             }
           }
@@ -97,6 +97,18 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

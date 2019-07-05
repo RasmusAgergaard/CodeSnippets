@@ -525,6 +525,9 @@
       },
       "OdeToFood.Data/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
           "OdeToFood.Core": "1.0.0"
         },
         "runtime": {

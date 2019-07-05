@@ -4630,6 +4630,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
           "OdeToFood.Core": "1.0.0"
         },
         "compile": {
@@ -12576,11 +12579,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+      "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
       "projectName": "OdeToFood",
-      "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
+      "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\OdeToFood.csproj",
       "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\obj\\",
+      "outputPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12599,8 +12602,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
-              "projectPath": "C:\\Users\\Rasmus\\Desktop\\Snippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj"
+            "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj": {
+              "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj"
             }
           }
         }
