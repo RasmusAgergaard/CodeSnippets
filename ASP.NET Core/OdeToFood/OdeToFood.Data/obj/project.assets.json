@@ -3595,23 +3595,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rasmus\\.nuget\\packages\\": {},
+    "C:\\Users\\rasmu\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+      "projectUniqueName": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
       "projectName": "OdeToFood.Data",
-      "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
-      "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\obj\\",
+      "projectPath": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+      "packagesPath": "C:\\Users\\rasmu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rasmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3624,8 +3624,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
-              "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
+            "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj": {
+              "projectPath": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\OdeToFood\\OdeToFood.Core\\OdeToFood.Core.csproj"
             }
           }
         }

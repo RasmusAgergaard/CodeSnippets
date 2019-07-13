@@ -24,3 +24,17 @@ C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFo
 C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.pdb
 C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.json
 C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.dev.json
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.deps.json
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.json
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.runtimeconfig.dev.json
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Data.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Core.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\bin\Debug\netcoreapp2.1\OdeToFood.Core.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.csprojAssemblyReference.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.csproj.CoreCompileInputs.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.AssemblyInfoInputs.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.AssemblyInfo.cs
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.csproj.CopyComplete
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Data\obj\Debug\netcoreapp2.1\OdeToFood.Data.pdb

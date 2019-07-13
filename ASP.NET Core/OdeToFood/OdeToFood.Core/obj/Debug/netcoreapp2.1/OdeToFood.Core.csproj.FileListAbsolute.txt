@@ -15,3 +15,12 @@ C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFo
 C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.AssemblyInfo.cs
 C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.dll
 C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\bin\Debug\netcoreapp2.1\OdeToFood.Core.deps.json
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\bin\Debug\netcoreapp2.1\OdeToFood.Core.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\bin\Debug\netcoreapp2.1\OdeToFood.Core.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.csprojAssemblyReference.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.csproj.CoreCompileInputs.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.AssemblyInfoInputs.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.AssemblyInfo.cs
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood.Core\obj\Debug\netcoreapp2.1\OdeToFood.Core.pdb
