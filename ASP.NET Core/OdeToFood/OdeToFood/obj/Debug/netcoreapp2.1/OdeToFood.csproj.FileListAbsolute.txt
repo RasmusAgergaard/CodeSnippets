@@ -122,3 +122,4 @@ C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFoo
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\_Summary.g.cshtml.cs
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\Components\RestaurantCount\Default.g.cshtml.cs
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood\bin\Debug\netcoreapp2.1\wwwroot\OdeToFood.png
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\OdeToFood\OdeToFood\obj\Debug\netcoreapp2.1\Razor\Pages\Restaurants\ClientRestaurants.g.cshtml.cs
