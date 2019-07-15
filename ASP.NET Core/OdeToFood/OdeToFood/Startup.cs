@@ -28,7 +28,8 @@ namespace OdeToFood
         {
             services.AddDbContextPool<OdeToFoodDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("OdeToFoodDb")));
 
-            services.AddScoped<IRestaurantData, SqlRestaurantData>();
+            //services.AddScoped<IRestaurantData, SqlRestaurantData>();
+            services.AddScoped<IRestaurantData, InMemoryRestaurantData>();
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -54,12 +55,31 @@ namespace OdeToFood
                 app.UseHsts();
             }
 
+            //Custom middleware
+            app.Use(SayHalloMiddleware);
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseNodeModules(env);
             app.UseCookiePolicy();
 
             app.UseMvc();
+        }
+
+        //Custom middleware
+        private RequestDelegate SayHalloMiddleware(RequestDelegate next)
+        {
+            return async ctx =>
+            {
+                if (ctx.Request.Path.StartsWithSegments("/hello"))
+                {
+                    await ctx.Response.WriteAsync("Hello World!");
+                }
+                else
+                {
+                    await next(ctx);
+                }
+            };
         }
     }
 }
