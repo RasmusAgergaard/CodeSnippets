@@ -1,0 +1,14 @@
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.2\BethanysPieShop.deps.json
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.2\BethanysPieShop.runtimeconfig.json
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.2\BethanysPieShop.runtimeconfig.dev.json
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.2\BethanysPieShop.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.2\BethanysPieShop.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.csprojAssemblyReference.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.csproj.CoreCompileInputs.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.RazorAssemblyInfo.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.RazorAssemblyInfo.cs
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.AssemblyInfoInputs.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.AssemblyInfo.cs
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.RazorTargetAssemblyInfo.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.pdb
