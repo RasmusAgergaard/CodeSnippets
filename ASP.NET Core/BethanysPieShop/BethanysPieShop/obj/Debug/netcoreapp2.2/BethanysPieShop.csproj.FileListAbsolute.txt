@@ -12,3 +12,14 @@ C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\Bethanys
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.RazorTargetAssemblyInfo.cache
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.dll
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.2\BethanysPieShop.Views.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\bin\Debug\netcoreapp2.2\BethanysPieShop.Views.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.TagHelpers.input.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.TagHelpers.output.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.RazorCoreGenerate.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.RazorTargetAssemblyInfo.cs
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.Views.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\BethanysPieShop.csproj.CopyComplete
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\BethanysPieShop\BethanysPieShop\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
