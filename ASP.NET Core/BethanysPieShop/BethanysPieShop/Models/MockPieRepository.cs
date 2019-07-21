@@ -21,10 +21,10 @@ namespace BethanysPieShop.Models
         {
             _pies = new List<Pie>
             {
-                new Pie{Id = 1, Name = "A", Price = 49.95M, ShortDescription = "Short", LongDescription = "Long", ImageUrl = "/url/pic", ImageThumbnailUrl = "/url/thumb", IsPieOfTheWeek = true},
-            new Pie { Id = 2, Name = "B", Price = 39.49M, ShortDescription = "Short", LongDescription = "Long", ImageUrl = "/url/pic", ImageThumbnailUrl = "/url/thumb", IsPieOfTheWeek = true },
-            new Pie { Id = 3, Name = "C", Price = 42.45M, ShortDescription = "Short", LongDescription = "Long", ImageUrl = "/url/pic", ImageThumbnailUrl = "/url/thumb", IsPieOfTheWeek = true },
-            new Pie { Id = 4, Name = "D", Price = 18.99M, ShortDescription = "Short", LongDescription = "Long", ImageUrl = "/url/pic", ImageThumbnailUrl = "/url/thumb", IsPieOfTheWeek = true }
+            new Pie { Id = 1, Name = "A", Price = 49.95M, ShortDescription = "Short", LongDescription = "Long", ImageUrl = @"..\images\pies\1.jpg", ImageThumbnailUrl = @"..\images\pies\1.jpg", IsPieOfTheWeek = true},
+            new Pie { Id = 2, Name = "B", Price = 39.49M, ShortDescription = "Short", LongDescription = "Long", ImageUrl = @"..\images\pies\2.jpg", ImageThumbnailUrl = @"..\images\pies\2.jpg", IsPieOfTheWeek = false },
+            new Pie { Id = 3, Name = "C", Price = 42.45M, ShortDescription = "Short", LongDescription = "Long", ImageUrl = @"..\images\pies\3.jpg", ImageThumbnailUrl = @"..\images\pies\3.jpg", IsPieOfTheWeek = false },
+            new Pie { Id = 4, Name = "D", Price = 18.99M, ShortDescription = "Short", LongDescription = "Long", ImageUrl = @"..\images\pies\4.jpg", ImageThumbnailUrl = @"..\images\pies\4.jpg", IsPieOfTheWeek = false }
 
             };
         }

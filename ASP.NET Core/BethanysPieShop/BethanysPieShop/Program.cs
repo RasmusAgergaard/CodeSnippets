@@ -14,7 +14,8 @@ namespace BethanysPieShop
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            //CreateWebHostBuilder(args).Build().Run();
+            //TODO: Add code from Pluralsight at 04:40 
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
