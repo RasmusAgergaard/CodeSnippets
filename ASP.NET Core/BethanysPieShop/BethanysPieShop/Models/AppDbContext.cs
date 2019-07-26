@@ -12,5 +12,6 @@ namespace BethanysPieShop.Models
 
         //Types that should be created in the database
         public DbSet<Pie> Pies { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
     }
 }
