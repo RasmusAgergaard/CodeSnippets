@@ -12,3 +12,17 @@ C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiF
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.dll
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.pdb
 C:\Users\rasmu\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.csprojAssemblyReference.cache
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\bin\Debug\netcoreapp2.2\CoreCodeCamp.deps.json
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\bin\Debug\netcoreapp2.2\CoreCodeCamp.runtimeconfig.json
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\bin\Debug\netcoreapp2.2\CoreCodeCamp.runtimeconfig.dev.json
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\bin\Debug\netcoreapp2.2\CoreCodeCamp.dll
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\bin\Debug\netcoreapp2.2\CoreCodeCamp.pdb
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.csproj.CoreCompileInputs.cache
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.RazorAssemblyInfo.cache
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.RazorAssemblyInfo.cs
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.AssemblyInfoInputs.cache
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.AssemblyInfo.cs
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.RazorTargetAssemblyInfo.cache
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.dll
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.pdb
+C:\Users\Rasmus\Desktop\Main drive\Programming\CodeSnippets\ASP.NET Core\CoreApiFundamentals\obj\Debug\netcoreapp2.2\CoreCodeCamp.csprojAssemblyReference.cache

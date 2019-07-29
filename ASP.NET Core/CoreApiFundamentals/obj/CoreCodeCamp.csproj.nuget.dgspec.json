@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\CoreCodeCamp.csproj": {}
+    "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\CoreCodeCamp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\CoreCodeCamp.csproj": {
+    "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\CoreCodeCamp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\CoreCodeCamp.csproj",
+        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\CoreCodeCamp.csproj",
         "projectName": "CoreCodeCamp",
-        "projectPath": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\CoreCodeCamp.csproj",
-        "packagesPath": "C:\\Users\\rasmu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\obj\\",
+        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\CoreCodeCamp.csproj",
+        "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\CoreApiFundamentals\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rasmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,13 +43,17 @@
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[6.1.1, )"
+              "version": "[5.0.1, )"
             },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
