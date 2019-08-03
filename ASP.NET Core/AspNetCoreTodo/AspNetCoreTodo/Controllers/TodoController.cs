@@ -1,22 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AspNetCoreTodo.Models;
+using AspNetCoreTodo.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace AspNetCoreTodo.Controllers
 {
     public class TodoController : Controller
     {
-        public IActionResult Index()
+        private readonly ITodoItemService _todoItemService;
+
+        public TodoController(ITodoItemService todoItemService)
         {
-            // Get to-do items from database
+            _todoItemService = todoItemService;
+        }
 
-            // Put items into a model
+        public async Task<IActionResult> Index()
+        {
+            var items = await _todoItemService.GetIncompleteItemsAsync();
 
-            // Render view using the model
+            var model = new TodoViewModel()
+            {
+                Items = items
+            };
 
-            return View();
+            return View(model);
         }
     }
 }
