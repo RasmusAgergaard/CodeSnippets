@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\BethanysPieShop.csproj": {}
+    "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\BethanysPieShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\BethanysPieShop.csproj": {
+    "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\BethanysPieShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\BethanysPieShop.csproj",
+        "projectUniqueName": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\BethanysPieShop.csproj",
         "projectName": "BethanysPieShop",
-        "projectPath": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\BethanysPieShop.csproj",
-        "packagesPath": "C:\\Users\\rasmu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rasmu\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\obj\\",
+        "projectPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\BethanysPieShop.csproj",
+        "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rasmus\\Desktop\\Main drive\\Programming\\CodeSnippets\\ASP.NET Core\\BethanysPieShop\\BethanysPieShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rasmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rasmus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
