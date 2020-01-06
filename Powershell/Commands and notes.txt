@@ -1,0 +1,12 @@
+New-Item
+    New-Item -Path . -Name "testfile1.txt" -ItemType "file" -Value "This is a text string."
+
+Remove-Item
+
+Invoke-Item
+
+Rename-Item
+    Rename-Item -Path "c:\logfiles\daily_file.txt" -NewName "monday_file.txt"
+
+Start-Process
+    Start-Process "https://www.google.dk/"

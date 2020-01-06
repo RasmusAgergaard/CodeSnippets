@@ -1,0 +1,34 @@
+git add .                                    //Add all files in the folder to be staged
+git add filename.txt                         //Add a single file
+git rm filename.txt                          //Remove a file, will also delete it from the folder
+git rm --cached filename.txt                 //Untrack file, but does not remove the fil from the folder
+git commit -m "Commit message"               //Add files to a commit with a message
+git commit -a -m "Commit message"            //Add files to a commit with a message, but skipping the "add" part
+git push -u origin master                    //Push to the git repository
+git clone url                                //Clone repository locally
+
+git status                                   //Check status
+git status -s                                //Short version of status
+git diff --staged                            //The staged files differences
+
+git log                                      //Commit history log
+git log -2                                   //Limits the number of commits in the log, whith the lastest commit first
+git log --oneline                            //Simple view log
+git log --stat                               //Commit log with details
+git log --patch                              //Commit log with full details
+
+
+//Branching
+git checkout -b branch_name                  //Create a new brance, and move HEAD to it
+git checkout branch_name                     //Move HEAD to branch
+git merge branch_name                        //Merge a branch. Note: You need to be on the master, and then merge the other branch with it
+
+git reset --soft
+git reset --mixed
+git reset --hard
+
+
+//Files tracked by Git can be in one of three stages
+- Committed | Unmodified changes from last commit snapshot
+- Modified  | Changes made to the file since last commit snapshot
+- Staged    | Changes marked to be added into the next commit snapshot
