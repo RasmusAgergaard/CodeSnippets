@@ -18,10 +18,11 @@ git log --oneline                            //Simple view log
 git log --stat                               //Commit log with details
 git log --patch                              //Commit log with full details
 
+git branch                                   //List branches
 
 //Branching
 git checkout -b branch_name                  //Create a new brance, and move HEAD to it
-git checkout branch_name                     //Move HEAD to branch
+git checkout branch_name                     //Move HEAD to branch, and update workarea
 git merge branch_name                        //Merge a branch. Note: You need to be on the master, and then merge the other branch with it
 
 git reset --soft
