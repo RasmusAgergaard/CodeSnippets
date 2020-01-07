@@ -10,3 +10,9 @@ Rename-Item
 
 Start-Process
     Start-Process "https://www.google.dk/"
+
+Tree
+    Tree /f            //Shows full tree
+
+Dir
+    -Force            //Show hidden files and folders
