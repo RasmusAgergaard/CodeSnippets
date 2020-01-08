@@ -7,6 +7,8 @@ git commit -m "Commit message"               //Add files to a commit with a mess
 git commit -a -m "Commit message"            //Add files to a commit with a message, but skipping the "add" part
 git push -u origin master                    //Push to the git repository
 git clone url                                //Clone repository locally
+git fetch                                    //You "fetch" and "merge", then you push - Pull does the fetch and merge at the same time
+git pull                                     //The same as fetch and merge
 
 git status                                   //Check status
 git status -s                                //Short version of status
@@ -25,9 +27,14 @@ git checkout -b branch_name                  //Create a new brance, and move HEA
 git checkout branch_name                     //Move HEAD to branch, and update workarea
 git merge branch_name                        //Merge a branch. Note: You need to be on the master, and then merge the other branch with it
 
+
 git reset --soft
 git reset --mixed
 git reset --hard
+
+//Tags - NOTE: Tags stick to objects forever
+git tag -a TagName -m "Tag message"          //Annotated Tag with message
+git tag TagName                              //Lightweight Tag
 
 
 //Files tracked by Git can be in one of three stages
