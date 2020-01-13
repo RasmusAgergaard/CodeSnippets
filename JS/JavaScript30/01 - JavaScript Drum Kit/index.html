@@ -8,39 +8,39 @@
 <body>
 
   <div class="keys">
-    <div data-key="65" class="key">
+    <div data-key="65" class="key key_a">
       <kbd>A</kbd>
       <span class="sound">clap</span>
     </div>
-    <div data-key="83" class="key">
+    <div data-key="83" class="key key_s">
       <kbd>S</kbd>
       <span class="sound">hihat</span>
     </div>
-    <div data-key="68" class="key">
+    <div data-key="68" class="key key_d">
       <kbd>D</kbd>
       <span class="sound">kick</span>
     </div>
-    <div data-key="70" class="key">
+    <div data-key="70" class="key key_f">
       <kbd>F</kbd>
       <span class="sound">openhat</span>
     </div>
-    <div data-key="71" class="key">
+    <div data-key="71" class="key key_g">
       <kbd>G</kbd>
       <span class="sound">boom</span>
     </div>
-    <div data-key="72" class="key">
+    <div data-key="72" class="key key_h">
       <kbd>H</kbd>
       <span class="sound">ride</span>
     </div>
-    <div data-key="74" class="key">
+    <div data-key="74" class="key key_j">
       <kbd>J</kbd>
       <span class="sound">snare</span>
     </div>
-    <div data-key="75" class="key">
+    <div data-key="75" class="key key_k">
       <kbd>K</kbd>
       <span class="sound">tom</span>
     </div>
-    <div data-key="76" class="key">
+    <div data-key="76" class="key key_l">
       <kbd>L</kbd>
       <span class="sound">tink</span>
     </div>
@@ -90,6 +90,65 @@
 
   //Events
   window.addEventListener("keydown", playSound);
+
+
+
+  //*********** Extra - Adds mouse-clicks *********//
+  //Note: It doesn't trigger the animation part, only sounds (and there is properly a more simple way to do it)
+
+  function playSoundOnClick(divPressed)
+  {
+    switch(divPressed)
+    {
+      case "a":
+        var audio = new Audio("sounds/clap.wav");
+        audio.play();
+        break;
+      case "s":
+        var audio = new Audio("sounds/hihat.wav");
+        audio.play();
+        break;
+      case "d":
+        var audio = new Audio("sounds/kick.wav");
+        audio.play();
+        break;
+      case "f":
+        var audio = new Audio("sounds/openhat.wav");
+        audio.play();
+        break;
+      case "g":
+        var audio = new Audio("sounds/boom.wav");
+        audio.play();
+        break;
+      case "h":
+        var audio = new Audio("sounds/ride.wav");
+        audio.play();
+        break;
+      case "j":
+        var audio = new Audio("sounds/snare.wav");
+        audio.play();
+        break;
+      case "k":
+        var audio = new Audio("sounds/tom.wav");
+        audio.play();
+        break;
+      case "l":
+        var audio = new Audio("sounds/tink.wav");
+        audio.play();
+        break;
+    }
+  }
+
+  //Get divs, and listen for click
+  document.getElementsByClassName('key_a')[0].addEventListener('click', function (event) {playSoundOnClick("a");});
+  document.getElementsByClassName('key_s')[0].addEventListener('click', function (event) {playSoundOnClick("s");});
+  document.getElementsByClassName('key_d')[0].addEventListener('click', function (event) {playSoundOnClick("d");});
+  document.getElementsByClassName('key_f')[0].addEventListener('click', function (event) {playSoundOnClick("f");});
+  document.getElementsByClassName('key_g')[0].addEventListener('click', function (event) {playSoundOnClick("g");});
+  document.getElementsByClassName('key_h')[0].addEventListener('click', function (event) {playSoundOnClick("h");});
+  document.getElementsByClassName('key_j')[0].addEventListener('click', function (event) {playSoundOnClick("j");});
+  document.getElementsByClassName('key_k')[0].addEventListener('click', function (event) {playSoundOnClick("k");});
+  document.getElementsByClassName('key_l')[0].addEventListener('click', function (event) {playSoundOnClick("l");});
 
 </script>
 
