@@ -2,6 +2,7 @@ New-Item
     New-Item -Path . -Name "testfile1.txt" -ItemType "file" -Value "This is a text string."
 
 Remove-Item
+    Remove-Item -Path "C:\code\test\" -Recurse -Force
 
 Invoke-Item
 
