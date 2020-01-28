@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello World</title>
+  <style>* {padding: 0; margin: 0}</style>
+</head>
+  <script src="pixi/pixi.min.js"></script>
+<body>
+  <script type="text/javascript">
+    let type = "WebGL"
+    if(!PIXI.utils.isWebGLSupported()){
+      type = "canvas"
+    }
+
+    //Aliases
+    let TextureCache = PIXI.utils.TextureCache;
+    let Application = PIXI.Application ;
+    let loader = PIXI.loader;
+    let resources = PIXI.loader.resources;
+    let Sprite = PIXI.Sprite;
+    let Rectangle = PIXI.Rectangle;
+    
+    let id;
+    //Create a Pixi Application
+    let app = new Application(
+    { 
+        width: 256, 
+        height: 256,                       
+        antialias: true, 
+        transparent: false, 
+        resolution: 1
+    });
+
+    //Add the canvas that Pixi automatically created for you to the HTML document
+    document.body.appendChild(app.view);
+
+
+    loader
+    .add("images/dungeon_spritesheet.json")
+    .load(setup);
+
+    function loadProgressHandler(loader, resource)
+    {
+        //Display the file `url` currently being loaded
+        console.log("loading: " + resource.url); 
+
+        //Display the percentage of files currently loaded
+        console.log("progress: " + loader.progress + "%");
+    }
+
+    //This `setup` function will run when the image has loaded
+    function setup() 
+    {
+        console.log("All files loaded");
+
+        // let tileset = TextureCache["images/tileset.png"];
+        // let rectangle = new Rectangle(96, 64, 32, 32);
+        // tileset.frame = rectangle;
+        // let rocket = new Sprite(tileset);
+
+        // let cat = new Sprite(resources["images/cat.png"].texture);
+        let id = PIXI.loader.resources["images/dungeon_spritesheet.json"].textures;
+        let player = new Sprite(id["player.jpg"]);
+
+        player.anchor.set(0.5, 0.5);
+        // cat.anchor.set(0.5, 0.5);
+        // rocket.anchor.set(0.5, 0.5);
+
+        player.position.set(20, 20);
+        // cat.position.set(96, 96);
+        // rocket.position.set(40, 40);
+        
+        app.stage.addChild(player);
+        //app.stage.addChild(cat);
+        //app.stage.addChild(rocket);
+    }
+
+  </script>
+</body>
+</html>
