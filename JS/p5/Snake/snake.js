@@ -2,13 +2,33 @@ function Snake()
 {
     this.x = 0;
     this.y = 0;
-    this.xSpeed = 1;
-    this.ySpeed = 0;
+    this.xSpeed = 0;
+    this.ySpeed = -1;
     this.total = 0;
     this.tail = [];
 
     this.Direction = function(x, y)
     {
+        if(this.xSpeed === -1 && x === 1)
+        {
+            return false;
+        }
+
+        if(this.xSpeed === 1 && x === -1)
+        {
+            return false;
+        }
+
+        if(this.ySpeed === -1 && y === 1)
+        {
+            return false;
+        }
+
+        if(this.ySpeed === 1 && y === -1)
+        {
+            return false;
+        }
+
         this.xSpeed = x;
         this.ySpeed = y;
     }
@@ -25,6 +45,10 @@ function Snake()
                 console.log("Sarting over");
                 this.total = 0;
                 this.tail = [];
+                scoreCurrent = 0;
+                this.ResetPosition();
+                this.xSpeed = 0;
+                this.ySpeed = -1;
 
                 //Death screen
                 fill(255, 0, 100);
@@ -40,12 +64,28 @@ function Snake()
         if(distance < 1)
         {
             this.total++;
+            scoreCurrent++;
+
+            if(scoreBest < scoreCurrent)
+            {
+                scoreBest = scoreCurrent;
+            }
+
             return true;
         }
         else
         {
             return false;
         }
+    }
+
+    this.ResetPosition = function()
+    {
+        let midtColum = (floor(gameAreaWidth / gridSize)) / 2;
+        let midtRow = (floor(gameAreaHeight / gridSize)) / 2;
+
+        this.x = midtColum * gridSize;
+        this.y = midtRow * gridSize;;
     }
 
     this.Update = function()
@@ -64,8 +104,8 @@ function Snake()
         this.x = this.x + this.xSpeed * gridSize;
         this.y = this.y + this.ySpeed * gridSize;
 
-        this.x = constrain(this.x, 0, width - gridSize);
-        this.y = constrain(this.y, 0, height - gridSize);
+        this.x = constrain(this.x, 0, gameAreaWidth - gridSize);
+        this.y = constrain(this.y, 0, gameAreaHeight - gridSize);
     }
 
     this.Show = function()
