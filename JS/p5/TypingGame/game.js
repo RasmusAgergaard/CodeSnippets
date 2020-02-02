@@ -1,11 +1,8 @@
-const canvasWidth = 600;
-const canvasHeight = 600;
-
-let playerString = "";
-let playerStringX = canvasWidth / 2;
-let playerStringY = canvasHeight - 30;
+const canvasWidth = window.innerWidth;
+const canvasHeight = window.innerHeight;
 
 let words = [];
+let player;
 
 //Timers
 let addWordTime = 150;
@@ -15,6 +12,7 @@ function setup()
 {
 	createCanvas(canvasWidth, canvasHeight);
 	textAlign(CENTER, CENTER);
+	player = new Player();
 }
 
 function draw() 
@@ -22,14 +20,13 @@ function draw()
 	//BG
 	background(51);
 
-	//Player square
+	//Word counter
+	textSize(20);
 	fill(255, 255, 255);
-	rect(50, canvasHeight - 60, canvasWidth - 100, 50, 20);
+	text(words.length, 20, 20);
 
-	//Player text
-	textSize(40);
-	fill(0, 0, 0);
-	text(playerString, playerStringX, playerStringY);
+	//Player
+	player.Show();
 
 	//Word
 	for (let i = 0; i < words.length; i++) 
@@ -49,12 +46,14 @@ function keyPressed()
 	if(keyCode === BACKSPACE)
 	{
 		//Remove last character of string
-		let newString = playerString.slice(0, -1);;
-		playerString = newString;	
+		//let newString = player.playerString.slice(0, -1);;
+		//player.playerString = newString;
+
+		player.ResetPlayerString();
 	}
 	else
 	{
-		playerString += key;
+		player.playerString += key;
 	}
 
 	CheckWords();
@@ -64,10 +63,11 @@ function CheckWords()
 {
 	for (let i = 0; i < words.length; i++) 
 	{
-		if(words[i].content == playerString)
+		if(words[i].content == player.playerString)
 		{
 			RemoveFromArray(words, words[i]);
-			ResetPlayerString();
+			player.ResetPlayerString();
+			player.AddKill();
 		}
 	}
 }
@@ -81,11 +81,6 @@ function AddWord()
 		addWordTimer = 0;
 		words.push(new Word());
 	}	
-}
-
-function ResetPlayerString()
-{
-	playerString = "";
 }
 
 function RemoveFromArray(array, what) 

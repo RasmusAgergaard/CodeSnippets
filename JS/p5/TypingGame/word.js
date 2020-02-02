@@ -17,8 +17,11 @@ function Word()
 
     this.Show = function()
     {
+        //BG
         fill(255, 0, 100);
         circle(this.x, this.y, 60)
+
+        //Text
         textSize(size);
 		fill(255, 255, 255);
 		text(this.content, this.x, this.y);
