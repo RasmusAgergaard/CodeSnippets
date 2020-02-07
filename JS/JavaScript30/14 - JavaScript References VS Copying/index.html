@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Reference VS Copy</title>
+</head>
+<body>
+
+  <script>
+
+    /********** Strings, numbers and booleans - Are value types **********/
+    let number1 = 10;
+    let number2 = number1;
+    console.log(number1, number2);        //Outout: 10 10
+    number1 = 20;
+    console.log(number1, number2);        //Outout: 20 10
+
+
+
+    /********** Aarray - Are reference types **********/
+    let players1 = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+    let players2 = players1;
+    console.log(players1, players2);      //Output: ["Wes", "Sarah", "Ryan", "Poppy"], ["Wes", "Sarah", "Ryan", "Poppy"]
+
+    //If we change one, we change both as the one just reference the other one
+    players2[3] = "Bob";
+    console.log(players1, players2);      //Output: ["Wes", "Sarah", "Ryan", "Bob"], ["Wes", "Sarah", "Ryan", "Bob"]
+
+    //You can make a non reference copy like this
+    let players3 = players1.slice();
+    let players4 = [].concat(players1); //Create a new array and concat the old one in
+    let players5 = [...players1]; //The new ES6 Spread
+    let players6 = Array.from(players1);
+
+
+
+    /********** Objects - Also reference types **********/
+
+    // with Objects
+    const person1 = {
+      name: 'Wes Bos',
+      age: 80
+    };
+
+    //You can make a copy like this
+    const person2 = Object.assign({}, person1, {age: 40});
+    console.log( person2); //Output: {name: "Wes Bos", age: 40}
+
+    //NOTE: assign only goes one level deep, so a sub object is still a reference. So you need a special function if you need to copy a object with many layers
+
+  </script>
+
+</body>
+</html>
