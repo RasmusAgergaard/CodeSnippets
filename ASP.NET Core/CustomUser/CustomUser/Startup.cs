@@ -27,6 +27,8 @@ namespace CustomUser
         {
             services.AddRazorPages();
             services.AddMvc();
+
+            services.AddScoped<IProjectData, SqlProjectData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

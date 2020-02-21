@@ -90,6 +90,44 @@ namespace CustomUser.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("CustomUser.Core.ApplicationUserProjects", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id", "ProjectId");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("ApplicationUserProjects");
+                });
+
+            modelBuilder.Entity("CustomUser.Core.Project", b =>
+                {
+                    b.Property<int>("ProjectId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ProjectId");
+
+                    b.ToTable("Projects");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -223,6 +261,19 @@ namespace CustomUser.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("CustomUser.Core.ApplicationUserProjects", b =>
+                {
+                    b.HasOne("CustomUser.Areas.Identity.Data.ApplicationUser", "ApplicationUser")
+                        .WithMany("ApplicationUserProjects")
+                        .HasForeignKey("ApplicationUserId");
+
+                    b.HasOne("CustomUser.Core.Project", "Project")
+                        .WithMany("ApplicationUserProjects")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

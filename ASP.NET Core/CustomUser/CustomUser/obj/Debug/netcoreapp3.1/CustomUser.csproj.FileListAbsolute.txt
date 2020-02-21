@@ -158,3 +158,5 @@ C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser\obj\Debug\netcoreapp3.1\
 C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
+C:\code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser\obj\Debug\netcoreapp3.1\Razor\Pages\Projects\List.cshtml.g.cs
+C:\code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser\obj\Debug\netcoreapp3.1\Razor\Pages\Projects\Edit.cshtml.g.cs

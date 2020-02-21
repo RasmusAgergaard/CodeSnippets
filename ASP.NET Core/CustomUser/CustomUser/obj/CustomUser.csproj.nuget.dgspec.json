@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\CustomUser.csproj": {}
+    "C:\\code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\CustomUser.csproj": {}
   },
   "projects": {
-    "C:\\Code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\CustomUser.csproj": {
+    "C:\\code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\CustomUser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\CustomUser.csproj",
+        "projectUniqueName": "C:\\code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\CustomUser.csproj",
         "projectName": "CustomUser",
-        "projectPath": "C:\\Code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\CustomUser.csproj",
+        "projectPath": "C:\\code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\CustomUser.csproj",
         "packagesPath": "C:\\Users\\Rasmus\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\obj\\",
+        "outputPath": "C:\\code\\CodeSnippets\\ASP.NET Core\\CustomUser\\CustomUser\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

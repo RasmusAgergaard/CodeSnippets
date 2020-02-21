@@ -1,0 +1,8 @@
+C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser.Core\bin\Debug\netcoreapp3.1\CustomUser.Core.deps.json
+C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser.Core\bin\Debug\netcoreapp3.1\CustomUser.Core.dll
+C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser.Core\bin\Debug\netcoreapp3.1\CustomUser.Core.pdb
+C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser.Core\obj\Debug\netcoreapp3.1\CustomUser.Core.csprojAssemblyReference.cache
+C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser.Core\obj\Debug\netcoreapp3.1\CustomUser.Core.AssemblyInfoInputs.cache
+C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser.Core\obj\Debug\netcoreapp3.1\CustomUser.Core.AssemblyInfo.cs
+C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser.Core\obj\Debug\netcoreapp3.1\CustomUser.Core.dll
+C:\Code\CodeSnippets\ASP.NET Core\CustomUser\CustomUser.Core\obj\Debug\netcoreapp3.1\CustomUser.Core.pdb
