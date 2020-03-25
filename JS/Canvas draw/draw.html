@@ -1,0 +1,731 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    </head>
+    <body data-rsssl=1>
+
+        <div style="display:none;">
+            <img id="imageFb" src="fb.png">
+            <img id="image01" src="01.jpg">
+            <img id="image02" src="02.jpg">
+            <img id="image03" src="03.jpg">
+            <img id="logo" src="td_logo_white.png">
+        </div>
+
+        <p>
+            Image 01 - 970x250 <input type="text" id="input01">
+            <button onclick="copyToClipboard('input01')">Copy filename</button>
+        </p>
+        <canvas id="canvas01" width="970" height="250"></canvas>
+        <hr>
+
+        <p>
+            Image 02 - 970x90 <input type="text" id="input02">
+            <button onclick="copyToClipboard('input02')">Copy filename</button>
+        </p>
+        <canvas id="canvas02" width="970" height="90"></canvas>
+        <hr>
+
+        <p>
+            Image 03 - 728x90 <input type="text" id="input03">
+            <button onclick="copyToClipboard('input03')">Copy filename</button>
+        </p>
+        <canvas id="canvas03" width="728" height="90"></canvas>
+        <hr>
+
+        <p>
+            Image 04 - 120x600 <input type="text" id="input04">
+            <button onclick="copyToClipboard('input04')">Copy filename</button>
+        </p>
+        <canvas id="canvas04" width="120" height="600"></canvas>
+        <hr>
+
+        <p>
+            Image 05 - 160x600 <input type="text" id="input05">
+            <button onclick="copyToClipboard('input05')">Copy filename</button>
+        </p>
+        <canvas id="canvas05" width="160" height="600"></canvas>
+        <hr>
+
+        <p>
+            Image 06 - 300x600 <input type="text" id="input06">
+            <button onclick="copyToClipboard('input06')">Copy filename</button>
+        </p>
+        <canvas id="canvas06" width="300" height="600"></canvas>
+        <hr>
+
+        <p>
+            Image 07 - 250x250 <input type="text" id="input07">
+            <button onclick="copyToClipboard('input07')">Copy filename</button>
+        </p>
+        <canvas id="canvas07" width="250" height="250"></canvas>
+        <hr>
+
+        <p>
+            Image 08 - 300x250 <input type="text" id="input08">
+            <button onclick="copyToClipboard('input08')">Copy filename</button>
+        </p>
+        <canvas id="canvas08" width="300" height="250"></canvas>
+        <hr>
+
+        <p>
+            Image 09 - 320x100 <input type="text" id="input09">
+            <button onclick="copyToClipboard('input09')">Copy filename</button>
+        </p>
+        <canvas id="canvas09" width="320" height="100"></canvas>
+        
+        <!-- Vars -->
+        <script>
+
+            //Content
+            var dealId = "4545";
+            var textHeading = "Lækkert gourmet ophold for 2";
+            var textSubHeading = "Så er Tambohus Kro & Badehotel tilbage";
+            var textPrice = "Spar 1309,-";
+
+            //Canvas/Contex
+            var canvas = document.getElementById('canvas01');   //01
+            var context = canvas.getContext('2d');
+            var canvas02 = document.getElementById('canvas02'); //02
+            var context02 = canvas02.getContext('2d');
+            var canvas03 = document.getElementById('canvas03'); //03
+            var context03 = canvas03.getContext('2d');
+            var canvas04 = document.getElementById('canvas04'); //04
+            var context04 = canvas04.getContext('2d');
+            var canvas05 = document.getElementById('canvas05'); //05
+            var context05 = canvas05.getContext('2d');
+            var canvas06 = document.getElementById('canvas06'); //06
+            var context06 = canvas06.getContext('2d');
+            var canvas07 = document.getElementById('canvas07'); //07
+            var context07 = canvas07.getContext('2d');
+            var canvas08 = document.getElementById('canvas08'); //08
+            var context08 = canvas08.getContext('2d');
+            var canvas09 = document.getElementById('canvas09'); //09
+            var context09 = canvas09.getContext('2d');
+
+            //Colors
+            var colorBlockBg = "#134365";
+            var colorNormalText = "#ffffff";
+            var colorButtonBg = "#ffffff";
+            var colorButtonText = "#2b95e1";
+
+            //Images
+            var image = document.getElementById('imageFb');
+            var image01 = document.getElementById('image01');
+            var image02 = document.getElementById('image02');
+            var image03 = document.getElementById('image03');
+            var imageAspectRatio = 0.525;
+            var logo = document.getElementById('logo');
+            var logoAspectRatio = 0.213;
+
+            //Set fields
+            document.getElementById('input01').value = dealId + "_01";
+            document.getElementById('input02').value = dealId + "_02";
+            document.getElementById('input03').value = dealId + "_03";
+            document.getElementById('input04').value = dealId + "_04";
+            document.getElementById('input05').value = dealId + "_05";
+            document.getElementById('input06').value = dealId + "_06";
+            document.getElementById('input07').value = dealId + "_07";
+            document.getElementById('input08').value = dealId + "_08";
+            document.getElementById('input09').value = dealId + "_09";
+
+        </script>
+
+        <!-- Functions -->
+        <script>
+            
+            //Text copy to clipboard
+            function copyToClipboard(inputField) 
+            {
+                var copyText = document.getElementById(inputField);
+
+                copyText.select();
+                copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+                document.execCommand("copy");
+            }
+
+
+            //Wrap Text
+            function wrapText(context, text, x, y, maxWidth, lineHeight) 
+            {
+                var words = text.split(' ');
+                var line = '';
+
+                for(var n = 0; n < words.length; n++) 
+                {
+                    var testLine = line + words[n] + ' ';
+                    var metrics = context.measureText(testLine);
+                    var testWidth = metrics.width;
+
+                    if (testWidth > maxWidth && n > 0) 
+                    {
+                        context.fillText(line, x, y);
+                        line = words[n] + ' ';
+                        y += lineHeight;
+                    }
+                    else 
+                    {
+                        line = testLine;
+                    }
+                }
+
+                context.fillText(line, x, y);
+            }
+
+        </script>
+
+        <!-- Image 01 -->
+        <script>
+
+            //Positions
+            var textDrawX = 20;
+            var textDrawY = 47;
+            var ctaX = textDrawX;
+            var ctaY = textDrawY + 133;
+            var ctaWidth = 180;
+            var staHeight = 50;
+
+            //BG
+            context.fillStyle = colorBlockBg;
+            context.fillRect(0, 0, canvas.width, canvas.height);
+
+            //Text
+            context.fillStyle = colorNormalText;
+            context.font = "38px Bebas Kai Regular";
+            context.fillText(textHeading, textDrawX, textDrawY);
+            context.font = "14px Arial";
+            context.fillText(textSubHeading, textDrawX, textDrawY + 20);
+            context.font = "60px Bebas Kai Regular";
+            context.fillText(textPrice, textDrawX, textDrawY + 100);
+
+            //CTA
+            context.fillStyle = colorButtonBg;
+            context.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context.fillStyle = colorButtonText;
+            context.font = "32px Bebas Kai Regular";
+            context.fillText("Læs mere her", ctaX + 12, ctaY + 37);
+
+            //Image
+            image.addEventListener('load', e => 
+            {
+                context.drawImage(image, 500, 10, 438, 230);
+                context.strokeStyle = "#ffffff";
+                context.lineWidth = 5
+                context.strokeRect(500, 10, 438, 230);
+
+                link01.setAttribute('download', 'image01.png');
+                link01.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+            });
+
+            //Logo
+            logo.addEventListener('load', e => 
+            {
+                context.drawImage(logo, 310, 196, 160, 34);
+            });
+
+        </script>
+
+        <!-- Image 02 -->
+        <script>
+
+            //Positions
+            var textDrawX = 10;
+            var textDrawY = 35;
+            var ctaX = 390;
+            var ctaY = 20
+            var ctaWidth = 180;
+            var staHeight = 50;
+            var imgX = 750;
+            var imgY = -2;
+            var imgWidth = 188;
+            var imgHeight = 100;
+            var imgLogoX = 600;
+            var imgLogoY = 30;
+            var imgLogoWidth = 122;
+            var imgLogoHeight = 26;
+
+            //BG
+            context02.fillStyle = colorBlockBg;
+            context02.fillRect(0, 0, canvas02.width, canvas02.height);
+
+            //Text
+            context02.fillStyle = colorNormalText;
+            context02.font = "30px Bebas Kai Regular";
+            context02.fillText(textHeading, textDrawX, textDrawY);
+            context02.font = "50px Bebas Kai Regular";
+            context02.fillText(textPrice, textDrawX, textDrawY + 45);
+
+            //CTA
+            context02.fillStyle = colorButtonBg;
+            context02.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context02.fillStyle = colorButtonText;
+            context02.font = "32px Bebas Kai Regular";
+            context02.fillText("Læs mere her", ctaX + 12, ctaY + 37);
+
+            //Image
+            image.addEventListener('load', e => 
+            {
+                context02.drawImage(image, imgX, imgY, imgWidth, imgHeight);
+                context02.strokeStyle = "#ffffff";
+                context02.lineWidth = 3
+                context02.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+
+            //Logo
+            logo.addEventListener('load', e => 
+            {
+                context02.drawImage(logo, imgLogoX, imgLogoY, imgLogoWidth, imgLogoHeight);
+            });
+
+        </script>
+
+        <!-- Image 03 -->
+        <script>
+
+            //Positions
+            var textDrawX = 10;
+            var textDrawY = 35;
+            var ctaX = 390;
+            var ctaY = 20
+            var ctaWidth = 180;
+            var staHeight = 50;
+
+            //BG
+            context03.fillStyle = colorBlockBg;
+            context03.fillRect(0, 0, canvas03.width, canvas03.height);
+
+            //Text
+            context03.fillStyle = colorNormalText;
+            context03.font = "30px Bebas Kai Regular";
+            context03.fillText(textHeading, textDrawX, textDrawY);
+            context03.font = "50px Bebas Kai Regular";
+            context03.fillText(textPrice, textDrawX, textDrawY + 45);
+
+            //CTA
+            context03.fillStyle = colorButtonBg;
+            context03.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context03.fillStyle = colorButtonText;
+            context03.font = "32px Bebas Kai Regular";
+            context03.fillText("Læs mere her", ctaX + 12, ctaY + 37);
+
+            //Image
+            image.addEventListener('load', e => 
+            {
+                let imgX = 584;
+                let imgY = 10;
+                let imgWidth = 133 ;
+                let imgHeight = 70;
+                context03.drawImage(image, imgX, imgY, imgWidth, imgHeight);
+                context03.strokeStyle = "#ffffff";
+                context03.lineWidth = 3
+                context03.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+
+        </script>
+
+        <!-- Image 04 -->
+        <script>
+
+            //Positions
+            var ctaX = 4;
+            var ctaY = 450;
+            var ctaWidth = canvas04.width - 8;
+            var staHeight = 50;
+            var maxWidth = canvas04.width;
+            var lineHeight1 = 24;
+            var lineHeight2 = 40;
+            var x = canvas04.width / 2;
+            var y = 30;
+
+            //BG
+            context04.fillStyle = colorBlockBg;
+            context04.fillRect(0, 0, canvas04.width, canvas04.height);
+
+            //Text
+            context04.textAlign = "center";
+            context04.fillStyle = colorNormalText;
+            context04.font = "18px Bebas Kai Regular";
+            wrapText(context04, textHeading, x, y, canvas04.width - 20, lineHeight1,);
+            context04.font = "40px Bebas Kai Regular";
+            wrapText(context04, textPrice, x, y + 110, canvas04.width - 20, lineHeight2,);
+
+            //Image
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 220;
+                let imgWidth = canvas04.width - 20;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context04.drawImage(image01, imgX, imgY, imgWidth, imgHeight);
+                context04.strokeStyle = "#ffffff";
+                context04.lineWidth = 1
+                context04.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 290;
+                let imgWidth = canvas04.width - 20;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context04.drawImage(image02, imgX, imgY, imgWidth, imgHeight);
+                context04.strokeStyle = "#ffffff";
+                context04.lineWidth = 1
+                context04.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 360;
+                let imgWidth = canvas04.width - 20;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context04.drawImage(image03, imgX, imgY, imgWidth, imgHeight);
+                context04.strokeStyle = "#ffffff";
+                context04.lineWidth = 1
+                context04.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+
+            //CTA
+            context04.fillStyle = colorButtonBg;
+            context04.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context04.fillStyle = colorButtonText;
+            context04.font = "28px Bebas Kai Regular";
+            context04.fillText("Læs mere", x, ctaY + 37);
+
+            //Logo
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 540;
+                let imgWidth = canvas04.width - 20;
+                let imgHeight = imgWidth * logoAspectRatio;
+                context04.drawImage(logo, imgX, imgY, imgWidth, imgHeight);
+            });
+
+        </script>
+
+        <!-- Image 05 -->
+        <script>
+
+            //Positions
+            var ctaX = 4;
+            var ctaY = 480;
+            var ctaWidth = canvas05.width - 8;
+            var staHeight = 50;
+            var maxWidth = canvas05.width;
+            var lineHeight1 = 24;
+            var lineHeight2 = 40;
+            var x = canvas05.width / 2;
+            var y = 30;
+
+            //BG
+            context05.fillStyle = colorBlockBg;
+            context05.fillRect(0, 0, canvas05.width, canvas05.height);
+
+            //Text
+            context05.textAlign = "center";
+            context05.fillStyle = colorNormalText;
+            context05.font = "18px Bebas Kai Regular";
+            wrapText(context05, textHeading, x, y, canvas05.width - 20, lineHeight1,);
+            context05.font = "40px Bebas Kai Regular";
+            wrapText(context05, textPrice, x, y + 110, canvas05.width - 20, lineHeight2,);
+
+            //Image
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 220;
+                let imgWidth = canvas05.width - 20;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context05.drawImage(image01, imgX, imgY, imgWidth, imgHeight);
+                context05.strokeStyle = "#ffffff";
+                context05.lineWidth = 1
+                context05.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 300;
+                let imgWidth = canvas05.width - 20;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context05.drawImage(image02, imgX, imgY, imgWidth, imgHeight);
+                context05.strokeStyle = "#ffffff";
+                context05.lineWidth = 1
+                context05.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 380;
+                let imgWidth = canvas05.width - 20;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context05.drawImage(image03, imgX, imgY, imgWidth, imgHeight);
+                context05.strokeStyle = "#ffffff";
+                context05.lineWidth = 1
+                context05.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+
+            //CTA
+            context05.fillStyle = colorButtonBg;
+            context05.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context05.fillStyle = colorButtonText;
+            context05.font = "28px Bebas Kai Regular";
+            context05.fillText("Læs mere", x, ctaY + 37);
+
+            //Logo
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 550;
+                let imgWidth = canvas05.width - 20;
+                let imgHeight = imgWidth * logoAspectRatio;
+                context05.drawImage(logo, imgX, imgY, imgWidth, imgHeight);
+            });
+
+        </script>
+
+        <!-- Image 06 -->
+        <script>
+
+            //Positions
+            var ctaX = 20;
+            var ctaY = 420;
+            var ctaWidth = canvas06.width - 40;
+            var staHeight = 50;
+            var maxWidth = canvas06.width;
+            var lineHeight1 = 30;
+            var lineHeight2 = 40;
+            var x = canvas06.width / 2;
+            var y = 50;
+
+            //BG
+            context06.fillStyle = colorBlockBg;
+            context06.fillRect(0, 0, canvas06.width, canvas06.height);
+
+            //Text
+            context06.textAlign = "center";
+            context06.fillStyle = colorNormalText;
+            context06.font = "30px Bebas Kai Regular";
+            wrapText(context06, textHeading, x, y, canvas06.width - 20, lineHeight1,);
+            context06.font = "50px Bebas Kai Regular";
+            wrapText(context06, textPrice, x, y + 120, canvas06.width - 20, lineHeight2,);
+
+            //Image
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 220;
+                let imgWidth = canvas06.width - 20;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context06.drawImage(image, imgX, imgY, imgWidth, imgHeight);
+                context06.strokeStyle = "#ffffff";
+                context06.lineWidth = 1
+                context06.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+
+            //CTA
+            context06.fillStyle = colorButtonBg;
+            context06.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context06.fillStyle = colorButtonText;
+            context06.font = "30px Bebas Kai Regular";
+            context06.fillText("Læs mere her", x, ctaY + 37);
+
+            //Logo
+            image.addEventListener('load', e => 
+            {
+                let imgX = 40;
+                let imgY = 520;
+                let imgWidth = canvas06.width - 80;
+                let imgHeight = imgWidth * logoAspectRatio;
+                context06.drawImage(logo, imgX, imgY, imgWidth, imgHeight);
+            });
+
+        </script>
+
+        <!-- Image 07 -->
+        <script>
+
+            //Positions
+            var ctaX = 20;
+            var ctaY = 130;
+            var ctaWidth = canvas07.width - 40;
+            var staHeight = 50;
+            var maxWidth = canvas07.width;
+            var lineHeight1 = 28;
+            var lineHeight2 = 40;
+            var x = canvas07.width / 2;
+            var y = 34;
+
+            //BG
+            context07.fillStyle = colorBlockBg;
+            context07.fillRect(0, 0, canvas07.width, canvas07.height);
+
+            //Text
+            context07.textAlign = "center";
+            context07.fillStyle = colorNormalText;
+            context07.font = "26px Bebas Kai Regular";
+            wrapText(context07, textHeading, x, y, canvas07.width - 20, lineHeight1,);
+            context07.font = "42px Bebas Kai Regular";
+            wrapText(context07, textPrice, x, y + 80, canvas07.width - 20, lineHeight2,);
+
+            //Image 02
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 202;
+                let imgWidth = 80;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context07.drawImage(image02, imgX, imgY, imgWidth, imgHeight);
+                context07.strokeStyle = "#ffffff";
+                context07.lineWidth = 1
+                context07.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+            //Image 03
+            image.addEventListener('load', e => 
+            {
+                let imgX = 160;
+                let imgY = 202;
+                let imgWidth = 80;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context07.drawImage(image03, imgX, imgY, imgWidth, imgHeight);
+                context07.strokeStyle = "#ffffff";
+                context07.lineWidth = 1
+                context07.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+            //Image 01
+            image.addEventListener('load', e => 
+            {
+                let imgX = 85;
+                let imgY = 196;
+                let imgWidth = 80;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context07.drawImage(image01, imgX, imgY, imgWidth, imgHeight);
+                context07.strokeStyle = "#ffffff";
+                context07.lineWidth = 1
+                context07.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+
+            //CTA
+            context07.fillStyle = colorButtonBg;
+            context07.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context07.fillStyle = colorButtonText;
+            context07.font = "30px Bebas Kai Regular";
+            context07.fillText("Læs mere her", x, ctaY + 37);
+
+        </script>
+
+        <!-- Image 08 -->
+        <script>
+
+            //Positions
+            var ctaX = 20;
+            var ctaY = 130;
+            var ctaWidth = canvas08.width - 40;
+            var staHeight = 50;
+            var maxWidth = canvas08.width;
+            var lineHeight1 = 30;
+            var lineHeight2 = 40;
+            var x = canvas08.width / 2;
+            var y = 34;
+
+            //BG
+            context08.fillStyle = colorBlockBg;
+            context08.fillRect(0, 0, canvas08.width, canvas08.height);
+
+            //Text
+            context08.textAlign = "center";
+            context08.fillStyle = colorNormalText;
+            context08.font = "30px Bebas Kai Regular";
+            wrapText(context08, textHeading, x, y, canvas08.width - 20, lineHeight1,);
+            context08.font = "38px Bebas Kai Regular";
+            wrapText(context08, textPrice, x, y + 78, canvas08.width - 20, lineHeight2,);
+
+            //Image 02
+            image.addEventListener('load', e => 
+            {
+                let imgX = 10;
+                let imgY = 198;
+                let imgWidth = 80;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context08.drawImage(image02, imgX, imgY, imgWidth, imgHeight);
+                context08.strokeStyle = "#ffffff";
+                context08.lineWidth = 1
+                context08.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+            //Image 03
+            image.addEventListener('load', e => 
+            {
+                let imgX = 210;
+                let imgY = 198;
+                let imgWidth = 80;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context08.drawImage(image03, imgX, imgY, imgWidth, imgHeight);
+                context08.strokeStyle = "#ffffff";
+                context08.lineWidth = 1
+                context08.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+            //Image 01
+            image.addEventListener('load', e => 
+            {
+                let imgX = 110;
+                let imgY = 198;
+                let imgWidth = 80;
+                let imgHeight = imgWidth * imageAspectRatio;
+                context08.drawImage(image01, imgX, imgY, imgWidth, imgHeight);
+                context08.strokeStyle = "#ffffff";
+                context08.lineWidth = 1
+                context08.strokeRect(imgX, imgY, imgWidth, imgHeight);
+            });
+
+            //CTA
+            context08.fillStyle = colorButtonBg;
+            context08.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context08.fillStyle = colorButtonText;
+            context08.font = "30px Bebas Kai Regular";
+            context08.fillText("Læs mere her", x, ctaY + 37);
+
+        </script>
+
+        <!-- Image 09 -->
+        <script>
+
+            //Positions
+            var ctaX = canvas09.width / 2 + 10;
+            var ctaY = 50;
+            var ctaWidth = canvas09.width / 2 - 20;
+            var staHeight = 40;
+            var lineHeight1 = 20;
+            var lineHeight2 = 40;
+            var x = canvas09.width / 2;
+            var y = 34;
+
+            //BG
+            context09.fillStyle = colorBlockBg;
+            context09.fillRect(0, 0, canvas09.width, canvas09.height);
+
+            //Text
+            context09.textAlign = "center";
+            context09.fillStyle = colorNormalText;
+            context09.font = "20px Bebas Kai Regular";
+            wrapText(context09, textHeading, x, y, canvas09.width - 20, lineHeight1,);
+            context09.font = "30px Bebas Kai Regular";
+            wrapText(context09, textPrice, x - 70, y + 46, canvas09.width - 20, lineHeight2,);
+
+            //CTA
+            context09.fillStyle = colorButtonBg;
+            context09.fillRect(ctaX, ctaY, ctaWidth, staHeight);
+            context09.fillStyle = colorButtonText;
+            context09.font = "30px Bebas Kai Regular";
+            context09.fillText("Læs mere", ctaX + (ctaWidth / 2), ctaY + 30);
+
+        </script>
+
+    </body>
+</html>      
