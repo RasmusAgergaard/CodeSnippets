@@ -7,28 +7,32 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public string letters;
-    public Text text;
+    public int health;
 
+    private string _letters;
     private List<GameObject> _enemies;
+    private int _score;
+    private Text _uiText;
+    private Text _uiHealth;
+    private Text _uiScore;
 
     // Start is called before the first frame update
     void Start()
     {
-        letters = "";
-        text = GameObject.Find("UiText").GetComponent<Text>();
+        ResetLetters();
         FindEnemies();
+
+        //UI
+        _uiText = GameObject.Find("UiText").GetComponent<Text>();
+        _uiHealth = GameObject.Find("UiHealth").GetComponent<Text>();
+        _uiScore = GameObject.Find("UiScore").GetComponent<Text>();
     }
-
-
 
     // Update is called once per frame
     void Update()
     {
         LookForKeyboardInputs();
-
         LookForEnemyMatch();
-
         UpdateUi();
     }
 
@@ -40,17 +44,29 @@ public class PlayerController : MonoBehaviour
 
             foreach (var enemy in _enemies)
             {
-                //TODO: Fix this mess
-                //var enemyText = enemy.word
-            }
+                var enemyWord = enemy.GetComponent<EnemyController>().word.ToUpper();
 
-            
+                if (enemyWord == _letters)
+                {
+                    Destroy(enemy);
+                    ResetLetters();
+                    AddScore(1);
+                    break;
+                }
+            }
         }
+    }
+
+    private void AddScore(int amount)
+    {
+        _score += amount;
     }
 
     private void UpdateUi()
     {
-        text.text = letters;
+        _uiText.text = _letters;
+        _uiHealth.text = "Health: " + health;
+        _uiScore.text = "Score: " + _score;
     }
 
     private void LookForKeyboardInputs()
@@ -61,22 +77,44 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKey(kcode))
                 {
+                    if (kcode.ToString() == "LeftArrow")
+                    {
+                        transform.position = new Vector3(transform.position.x - 10, transform.position.y, transform.position.z);
+                        break;
+                    }
+
+                    if (kcode.ToString() == "RightArrow")
+                    {
+                        transform.position = new Vector3(transform.position.x + 10, transform.position.y, transform.position.z);
+                        break;
+                    }
+
                     if (kcode.ToString() == "Backspace")
                     {
-                        letters = "";
+                        ResetLetters();
                     }
                     else
                     {
-                        letters += kcode;
+                        _letters += kcode;
                     }
                 }
             }
         }
     }
 
+    private void ResetLetters()
+    {
+        _letters = "";
+    }
+
     private void FindEnemies()
     {
         var enemies = GameObject.FindGameObjectsWithTag("Enemy");
         _enemies = enemies.ToList();
+    }
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
     }
 }

@@ -6,23 +6,33 @@ using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
 {
-    public float speed = 1.0f;
-    private Transform _playerTransform;
-    private List<string> _words;
+    public float speed;
+    public float speedRange;
     public string word;
+
+    private float _movementSpeed;
     private TextMesh _text;
+    private GameObject _player;
+    private List<string> _words;
 
     public EnemyController()
     {
         _words = new List<string>()
         {
-            "Word",
-            "Dead",
-            "Cow",
-            "Ping",
-            "Flower",
-            "Car",
-            "Bob"
+            "action",
+            "break",
+            "claim",
+            "consider",
+            "design",
+            "discussion",
+            "eat",
+            "effect",
+            "environmental",
+            "fail",
+            "follow",
+            "government",
+            "happen",
+            "husband"
         };
 
     }
@@ -30,12 +40,15 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        _player = GameObject.FindWithTag("Player");
 
-        word = _words[Random.Range(0, _words.Count)];
+        word = _words[Random.Range(0, _words.Count)].ToUpper();
 
         _text = GetComponentInChildren<TextMesh>();
         _text.text = word;
+
+        //Speed
+        _movementSpeed = speed + Random.Range(-speedRange, speedRange);
     }
 
     // Update is called once per frame
@@ -46,11 +59,15 @@ public class EnemyController : MonoBehaviour
 
     private void MoveTowardsPlayer()
     {
-        if (Vector3.Distance(transform.position, _playerTransform.position) > 0.001f)
+        float step = _movementSpeed * Time.deltaTime; // calculate distance to move
+        var targetFixed = new Vector3(_player.transform.position.x, transform.position.y, _player.transform.position.z); //Only move on the x and z axis
+        transform.position = Vector3.MoveTowards(transform.position, targetFixed, step);
+
+        if (Vector3.Distance(transform.position, _player.transform.position) < 1f)
         {
-            float step = speed * Time.deltaTime; // calculate distance to move
-            var targetFixed = new Vector3(_playerTransform.position.x, transform.position.y, _playerTransform.position.z); //Only move on the x and z axis
-            transform.position = Vector3.MoveTowards(transform.position, targetFixed, step);
+            _player.GetComponent<PlayerController>().TakeDamage(10);
+            Destroy(gameObject);
         }
+
     }
 }
